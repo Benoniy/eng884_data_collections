@@ -142,4 +142,15 @@ print(dev_ops_students) -> {'name': 'Ben',
                             'completed_lessons': 3,
                             'completed_lessons_names': ['variables', 'data types', 'collections']
                             }
-```
+```  
+
+## Sets  
+### What are sets?  
+  ***A set is similar to a list but it is unordered, Sets are mutable and they are created using {}***  
+```python
+car_parts = {'doors', 'windows', 'tires'}
+print(car_parts) # You cannot predict which order it will print in
+```  
+
+### What is a frozen set?  
+  ***A frozen set is a set that***
