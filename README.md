@@ -21,6 +21,7 @@ print(shopping_list[0]) -> 'bread'
   ***as when strings are sliced.***  
 ```python
 print(shopping_list[1:3]) -> ['milk', 'eggs']
+
 print(shopping_list[-2])  -> ['ham']
 ```  
    
@@ -29,31 +30,41 @@ print(shopping_list[-2])  -> ['ham']
 * replace - to replace an item in a list you must explicitly overwrite it.  
 ```python
 print(shopping_list) -> ['bread', 'milk', 'eggs', 'ham', 'apples']
+
 shopping_list[0] = 'tomatoes'
+
 print(shopping_list) -> ['tomatoes', 'milk', 'eggs', 'ham', 'apples']
 ```  
 * append - to add an item to the end of a list you must use the append method.  
 ```python
 print(shopping_list) -> ['bread', 'milk', 'eggs', 'ham', 'apples']
+
 shopping_list.append('sausage')
+
 print(shopping_list) -> ['bread', 'milk', 'eggs', 'ham', 'apples', 'sausage']
 ```  
 * insert - to add an item to list at a specific index you must use the insert method. The object that is  
 currently in that space will shifted up an index and so will all the objects with a higher index.  
 ```python
 print(shopping_list) -> ['bread', 'milk', 'eggs', 'ham', 'apples']
+
 shopping_list.insert(0, "avocado")
+
 print(shopping_list) -> ['avocado', 'bread', 'milk', 'eggs', 'ham', 'apples']
 ```
 * remove - to remove an object from a list when you know the content of the object.  
 ```python
 print(shopping_list) -> ['bread', 'milk', 'eggs', 'ham', 'apples']
+
 shopping_list.remove('eggs')
+
 print(shopping_list) -> ['bread', 'milk', 'ham', 'apples']
 ```  
 * pop - to remove an object from a list when you know the index of the object.  
 ```python
 print(shopping_list) -> ['bread', 'milk', 'eggs', 'ham', 'apples']
+
 shopping_list.pop(0)
+
 print(shopping_list) -> ['milk', 'eggs', 'ham', 'apples']
 ```  
