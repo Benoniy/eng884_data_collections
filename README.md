@@ -68,3 +68,10 @@ shopping_list.pop(0)
 
 print(shopping_list) -> ['milk', 'eggs', 'ham', 'apples']
 ```  
+
+## Tuples  
+### What is a Tuple?  
+  ***A tuple is exactly the same as a list but there is one key difference, tuples are immutable.***  
+  ***Because of this they should be used to store data that must never change in order to protect***  
+  ***that data.***  
+  

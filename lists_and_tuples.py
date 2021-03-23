@@ -1,4 +1,4 @@
-# What is a list
+# What is a list?
 # Lists are commonly used to store large amounts of data
 # Lists are mutable
 # [] is used to create a list
@@ -33,3 +33,12 @@ print(shopping_list)
 shopping_list.pop(0)
 print(shopping_list)
 
+
+# What is a Tuple?
+# Tuples are exactly the same as lists but Tuples are immutable.
+# They should be used for information that must never change. To protect data.
+# () is used to create a tuple
+essential_tuple = ("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday")
+
+
+# Indexing works the same as with strings and lists
