@@ -75,3 +75,71 @@ print(shopping_list) -> ['milk', 'eggs', 'ham', 'apples']
   ***Because of this they should be used to store data that must never change in order to protect***  
   ***that data.***  
   
+## Dictionaries  
+### What is a dictionary?  
+  ***Dictionaries use KEY, VALUE pairs to save data which can be retrieved based on either its***  
+  ***key or value. They are created using {} and are so flexible that you can declare a list within one.***  
+  ***keys must be unique!***
+```python
+dev_ops_students = {'key': 'value',
+                    'name': 'Ben',
+                    'stream': 'DevOps',
+                    'completed_lessons': 3,
+                    'completed_lessons_names': ['variables', 'data types', 'collections']  # This is a list declared as a value
+                    }
+```  
+### How do you retrieve data from a dictionary?  
+* To retrieve a value based on a key   
+  `print(dev_ops_students['key']) -> 'value'`  
+  
+### Dictionary methods  
+* add - to add a new key value pair to a dictionary you must explicitly state the new key and value
+```python
+print(dev_ops_students) -> {'key': 'value',
+                            'name': 'Ben',
+                            'completed_lessons': 3,
+                            'completed_lessons_names': ['variables', 'data types', 'collections']
+                            }
+
+dev_ops_students['new key'] = 'new value'
+
+print(dev_ops_students) -> {'key': 'value', 
+                            'name': 'Ben', 
+                            'completed_lessons': 3, 
+                            'completed_lessons_names': ['variables', 'data types', 'collections'], 
+                            'new key': 'new value'
+                            }
+```
+* change - to change a key's value you must overwrite it similar to adding a new key value pair
+```python
+print(dev_ops_students) -> {'key': 'value', 
+                            'name': 'Ben', 
+                            'completed_lessons': 3, 
+                            'completed_lessons_names': ['variables', 'data types', 'collections'], 
+                            'new key': 'new value'
+                            }
+
+dev_ops_students['new key'] = 'changed value'
+
+print(dev_ops_students) -> {'key': 'value', 
+                            'name': 'Ben', 
+                            'completed_lessons': 3, 
+                            'completed_lessons_names': ['variables', 'data types', 'collections'], 
+                            'new key': 'changed value'
+                            }
+```
+* remove - to remove from a dictionary you must use the pop() method  
+```python
+print(dev_ops_students) -> {'key': 'value',
+                            'name': 'Ben',
+                            'completed_lessons': 3,
+                            'completed_lessons_names': ['variables', 'data types', 'collections']
+                            }
+
+dev_ops_students.pop('key')
+
+print(dev_ops_students) -> {'name': 'Ben',
+                            'completed_lessons': 3,
+                            'completed_lessons_names': ['variables', 'data types', 'collections']
+                            }
+```
