@@ -153,4 +153,10 @@ print(car_parts) # You cannot predict which order it will print in
 ```  
 
 ### What is a frozen set?  
-  ***A frozen set is a set that***
+  ***A frozen set is a set that has been generated from the use of frozenset() on a list, set, dictionary***  
+  ***or tuple. It returns an immutable frozenset initialized with elements from the given iterable.***  
+```python
+car_parts = {'doors', 'windows', 'tires'}
+frozen = frozenset(car_parts)
+print(frozen) -> ({'doors', 'windows', 'tires'})
+```
